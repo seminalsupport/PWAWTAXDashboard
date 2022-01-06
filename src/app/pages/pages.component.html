@@ -1,0 +1,202 @@
+
+<app-side-nav 
+[sidenavTemplateRef]="navContent"
+[direction]="'right'" 
+[navWidth]="280" 
+[duration]="0.5"></app-side-nav>
+
+
+<div class="wrapper" style="text-align: center;">
+  <div class="header">
+      <div class="row no-gutters">
+      <!-- <div class="col-auto">
+              <button class="btn  btn-link text-dark menu-btn"><img src="assets/img/menu.png"  alt=""><span (click)="toggleSideNav()" class="new-notification"></span></button>
+          </div>-->
+          <div class="col text-center"><img src="assets/img/logo.png" alt="" class="header-logo">
+            WTAX DASHBOARD
+              (Ranebennur)
+          </div>
+         
+          <div class="col-auto">
+              <a routerLink="/login" class="btn  btn-link text-dark"><i class="material-icons">account_circle</i></a>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <!-- <input type="text" class="form-control form-control-lg search my-3" placeholder="Search"> -->
+     
+      <div  class="row" *ngIf="isShownHome"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+            <embed src="https://ranebennur.oasisweb.in/h2ope/dashboardnew.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+     
+    <div  class="row" *ngIf="isShownCollection"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+   
+            <embed src="https://ranebennur.oasisweb.in/h2ope/collectiondashboard.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+
+    <div  class="row" *ngIf="isShownDistribution"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+      
+            <embed src="https://ranebennur.oasisweb.in/h2ope/BillDistributionGISMapDashboard.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+
+    <div  class="row" *ngIf="isShownConsumerDetails"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+      
+            <embed src="https://ranebennur.oasisweb.in/h2ope/ConsumerDetailsDashboard.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+
+    <div  class="row" *ngIf="isShownTop10Reports"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+    
+            <embed src="https://ranebennur.oasisweb.in/h2ope/toptendashboard.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+
+    <div  class="row" *ngIf="isShownSystem"  >
+        <h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+    
+        <hr>
+            <embed src="https://ranebennur.oasisweb.in/h2ope/systemdashboard.aspx"
+            width="100%" height="800"
+            onerror="alert('URL invalid !!');" />
+       
+        
+    </div>
+   
+  </div>
+
+  
+  <div class="footer">
+      <div class="no-gutters">
+          <div class="col-auto mx-auto">
+              <div class="row no-gutters justify-content-center">
+                  <div class="col-auto">
+                     
+                      <a class="active">
+                          <br>
+                          
+                          <span>
+                              Powered By- Seminal Softwares Pvt Ltd, Vijayapur <br>
+                          
+                          </span>
+                          <br>
+                      </a>
+                     
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+</div> 
+
+
+<div class="filter">
+ <!-- <button class="btn btn-default filter-btn shadow"><i class="material-icons">filter_list</i></button>-->
+  <button  (click)="toggleSideNav()" class="btn  btn-default filter-btn shadow"><i class="material-icons">filter_list</i></button>
+   
+  <div class="container filters-container navContent" >
+
+      <ng-template #navContent class="nav">
+         
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                         Menu<br>
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+                  <hr>
+
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                         
+                          <a (click)="toggleShowHome()">Home</a><br> 
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                        <a (click)="toggleShowCollection()">Collection</a><br> 
+                        
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                        <a (click)="toggleShowDistribution()">Distribution</a><br> 
+                       
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+
+                 <div class="subtitle h6">
+                      <div class="d-inline-block">
+                        
+                         <a (click)="toggleShowConsumerDetails()">Consumer Details</a><br> 
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                        <a (click)="toggleShowTop10Reports()">Top 10 Reports</a><br> 
+                        
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="subtitle h6">
+                      <div class="d-inline-block">
+                        <a (click)="toggleShowSystem()">System</a><br> 
+                      
+                          <!-- <p class="small text-mute">2154 products</p> -->
+                      </div>
+                  </div>
+                  
+          
+                  
+          
+                  
+              
+
+</ng-template>
+
+     
+
+  </div>
+</div>
+

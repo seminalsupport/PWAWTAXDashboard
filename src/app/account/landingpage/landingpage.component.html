@@ -1,0 +1,54 @@
+
+    <!-- <div class="row no-gutters vh-100 loader-screen">
+        <div class="col align-self-center text-white text-center">
+            <img src="assets/img/logo.png" alt="logo">
+            <h1><span class="font-weight-light">Namma</span>BBMP</h1>
+            <div class="laoderhorizontal"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>-->
+    <div class="row no-gutters vh-100 proh bg-template">
+        <!-- <img src="assets/img/seminallogo.png" alt="logo" class="apple right-image align-self-center"> -->
+            <!--<img src="assets/img/seminallogo.png" alt="logo" class="logo-small">-->
+       <div class="col align-self-center px-3  text-center">
+           <img src="assets/img/logo.png" alt="logo" class="logo-small">
+           <h2 class="text-white"><span class="font-weight-light"></span>WTAX Dashboard</h2> 
+           <form class="form-container shadow" [formGroup]="langingpageForm" (ngSubmit)="onSubmit()">
+               
+
+           
+<h6 >Hi  <span class="span">{{Username}} ,</span> </h6> 
+
+
+
+               <div class="form-group">
+                  
+                       <select class="form-control form-control-lg" (change)="OnCitySelection($event)"  id="SelectCity" formControlName="SelectCity" [ngClass]="{ 'is-invalid': submitted && f.SelectCity.errors }">
+                           <option value="" >- Please Select City -</option>
+                           <option *ngFor="let city of citylist" value={{city.CityId}}>{{city.CityName}}</option>
+                       </select>
+                      
+               <div *ngIf="submitted && f.SelectCity.errors" class="invalid-feedback">
+                   <div *ngIf="f.SelectCity.errors.required">City is required</div>
+               </div>
+               </div>
+               
+               <br>
+               <div class="row">
+                   <div class="col-auto">
+                       <button [disabled]="loading" class="btn btn-lg btn-default btn-rounded shadow"  type="submit" > <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span><span>Go</span><i class="material-icons">arrow_forward</i>
+                       </button>
+                       <br>
+                       <br>
+                       <a routerLink="">Logout</a> here.
+                   </div>
+               </div>
+
+               
+           </form>
+           <p class="text-center text-white">
+               Powered By- Seminal Softwares Pvt Ltd, Vijayapur
+              
+           </p>
+       </div>
+   </div>
+   

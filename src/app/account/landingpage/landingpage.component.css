@@ -1,0 +1,16 @@
+.form-container {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+h6{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.span{
+    color: #FF0068;
+}
