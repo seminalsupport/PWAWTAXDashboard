@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="pink-theme">
+<head>
+  <base href="https://demo.oasisweb.in/PWAWTAXDashboard/">  <title>WTAX DASHBOARD</title>
+  
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Seminal Softwares">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#1976d2">
+   
+
+    <!-- Material design icons CSS -->
+    <link rel="stylesheet" href="assets/vendor/materializeicon/material-icons.css">
+
+    <!-- Roboto fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link href="assets/vendor/swiper/css/swiper.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- nouislider CSS -->
+        <link href="assets/vendor/nouislider/nouislider.min.css" rel="stylesheet">
+
+  
+  
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+
+
+<link rel="stylesheet" href="styles.5fa06997f7b990c87a18.css"></head>
+<body>
+  <app-root></app-root>
+
+  <!-- jquery, popper and bootstrap js -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>     <script src="assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+  <!-- cookie js -->     <script src="assets/vendor/cookie/jquery.cookie.js"></script>
+
+  <!-- swiper js -->
+  <script src="assets/vendor/swiper/js/swiper.min.js"></script>
+
+  <!-- template custom js -->
+  <script src="assets/js/main.js"></script>
+
+      <!-- nouislider js -->
+      <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+
+  <!-- page level script -->
+  <script>
+      $(window).on('load', function() {
+          /* swiper slider carousel */
+          var swiper = new Swiper('.small-slide', {
+              slidesPerView: 'auto',
+              spaceBetween: 0,
+          });
+
+          var swiper = new Swiper('.news-slide', {
+              slidesPerView: 5,
+              spaceBetween: 0,
+              pagination: {
+                  el: '.swiper-pagination',
+              },
+              breakpoints: {
+                  1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 0,
+                  },
+                  768: {
+                      slidesPerView: 3,
+                      spaceBetween: 0,
+                  },
+                  640: {
+                      slidesPerView: 2,
+                      spaceBetween: 0,
+                  },
+                  320: {
+                      slidesPerView: 2,
+                      spaceBetween: 0,
+                  }
+              }
+          });
+
+          /* notification view and hide */
+          // setTimeout(function() {
+          //     $('.notification').addClass('active');
+          //     setTimeout(function() {
+          //         $('.notification').removeClass('active');
+          //     }, 3500);
+          // }, 500);
+          // $('.closenotification').on('click', function() {
+          //     $(this).closest('.notification').removeClass('active')
+          // });
+      });
+
+  </script>
+
+<script>
+  $(window).on('load', function() {
+      var swiper = new Swiper('.small-slide', {
+          slidesPerView: 'auto',
+          spaceBetween: 0,
+      });
+
+      var swiper = new Swiper('.news-slide', {
+          slidesPerView: 5,
+          spaceBetween: 0,
+          pagination: {
+              el: '.swiper-pagination',
+          },
+          breakpoints: {
+              1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 0,
+              },
+              768: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+              },
+              640: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+              },
+              320: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+              }
+          }
+      });
+
+      /* range picker for filter */
+      // var html5Slider = document.getElementById('rangeslider');
+      // noUiSlider.create(html5Slider, {
+      //     start: [0, 100],
+      //     connect: true,
+      //     range: {
+      //         'min': 0,
+      //         'max': 500
+      //     }
+      // });
+
+      // var inputNumber = document.getElementById('input-number');
+      // var select = document.getElementById('input-select');
+
+      // html5Slider.noUiSlider.on('update', function(values, handle) {
+      //     var value = values[handle];
+
+      //     if (handle) {
+      //         inputNumber.value = value;
+      //     } else {
+      //         select.value = Math.round(value);
+      //     }
+      // });
+      // select.addEventListener('change', function() {
+      //     html5Slider.noUiSlider.set([this.value, null]);
+      // });
+      // inputNumber.addEventListener('change', function() {
+      //     html5Slider.noUiSlider.set([null, this.value]);
+      // });
+
+      /* chosen select*/
+      // $(".chosen").chosen();
+  });
+
+  
+
+  // window.onload = function() {
+  //     var ctx = document.getElementById('canvas').getContext('2d');
+  //     window.myLine = new Chart(ctx, config);
+  // };
+
+</script>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime-es2015.878c414f57e8cda3aa4d.js" type="module"></script><script src="runtime-es5.878c414f57e8cda3aa4d.js" nomodule defer></script><script src="polyfills-es5.8e16724e01f65bc4b968.js" nomodule defer></script><script src="polyfills-es2015.b4a3bdae6bcd059f26dd.js" type="module"></script><script src="main-es2015.8d1ea6661e970c2fe560.js" type="module"></script><script src="main-es5.8d1ea6661e970c2fe560.js" nomodule defer></script></body>
+</html>
